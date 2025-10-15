@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Vera Solar – Argentina | Paneles, Inversores & Instalaciones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .gallery-img{height: 200px; object-fit: cover; cursor: pointer; transition: transform .3s;}
+    .gallery-img:hover{transform: scale(1.05);}
+    .wapp{position: fixed; bottom: 20px; right: 20px; z-index: 1050;}
+  </style>
+</head>
 <body class="bg-light">
 
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #28a745;">
@@ -9,11 +22,12 @@
 <header class="text-white text-center py-5" style="background-color: #28a745;">
   <div class="container">
     <h1 class="display-4 fw-bold">Energía Solar Fotovoltaica</h1>
-    <p class="lead">Ahorrá hasta el 85 % de tu factura con energía limpia y certificada IRAM.</p>
+    <p class="lead">Ahorrá hasta el 85 % de tu factura con paneles, inversores y obra completa.</p>
     <a href="#contacto" class="btn btn-light btn-lg fw-bold">Solicitá tu estudio gratis</a>
   </div>
 </header>
 
+<!-- ===== ¿QUÉ ES? ===== -->
 <section id="que-es" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">¿Qué es un sistema On-Grid en Argentina?</h2>
@@ -21,18 +35,53 @@
   </div>
 </section>
 
-<section id="beneficios" class="py-5" style="background-color: #f0fff0;">
+<!-- ===== COMPONENTES CON IMÁGENES ===== -->
+<section id="componentes" class="py-5" style="background-color: #f0fff0;">
   <div class="container">
-    <h2 class="text-center mb-4">Beneficios locales</h2>
+    <h2 class="text-center mb-4">Componentes principales</h2>
     <div class="row text-center">
-      <div class="col-md-4"><span class="fs-1">✅</span><p>Ahorro hasta 85 % en tu factura</p></div>
-      <div class="col-md-4"><span class="fs-1">♻️</span><p>Energía limpia – Ley 27.191</p></div>
-      <div class="col-md-4"><span class="fs-1">🏠</span><p>Valorizá tu propiedad +8 %</p></div>
+      <div class="col-md-4 mb-4">
+        <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Paneles solares">
+        <h5 class="mt-2">Paneles Solares</h5>
+        <p>Módulos IRAM-IEC 61215/61730. De 450-550 Wp, alta eficiencia (>21 %).</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Inversor">
+        <h5 class="mt-2">Inversor</h5>
+        <p>IRAM 62404-1, protección anti-isla, eficiencia >98 %. De 3-15 kW monofásico o trifásico.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Estructura">
+        <h5 class="mt-2">Estructura & Cables</h5>
+        <p>Acero galvanizado + aluminio anodizado. Cable 6 mm² THWN-90, IP68 MC4.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===== CONCEPTOS ARGENTINOS ===== -->
+<!-- ===== ESQUEMA UNIFILAR ===== -->
+<section id="esquema" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">Esquema unifilar típico</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/On_Grid_PV_System.svg/800px-On_Grid_PV_System.svg.png" class="img-fluid rounded" alt="Esquema on-grid">
+    <p class="mt-3">Corriente DC (→) Inversor (→) AC (→) Medidor bidireccional (→) Red de baja tensión.</p>
+  </div>
+</section>
+
+<!-- ===== GALERÍA DE OBRAS ===== -->
+<section id="galeria" class="py-5" style="background-color: #f0fff0;">
+  <div class="container">
+    <h2 class="text-center mb-4">Obras realizadas</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1559309094-39f6f7c0e5a3?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Obra 1"></div>
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1581092795364-00b5e05604c2?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Obra 2"></div>
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Obra 3"></div>
+      <div class="col-6 col-md-3"><img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded gallery-img" alt="Obra 4"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONCEPTOS AMPLIADOS ===== -->
 <section id="conceptos" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">Conceptos clave del sistema On-Grid en Argentina</h2>
@@ -85,8 +134,38 @@
     </div>
   </div>
 </section>
-<!-- ===== FIN CONCEPTOS ===== -->
 
+<!-- ===== CALCULADORA RÁPIDA ===== -->
+<section id="calc" class="py-5" style="background-color: #f0fff0;">
+  <div class="container">
+    <h2 class="text-center mb-4">Calculadora rápida</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <label class="form-label">Consumo mensual (kWh)</label>
+        <input type="number" class="form-control" id="kwh" placeholder="Ej: 350">
+        <button class="btn btn-success w-100 mt-3" onclick="calcular()">Calcular</button>
+        <div class="mt-3 alert alert-success d-none" id="result"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function calcular(){
+    const kwh = parseFloat(document.getElementById('kwh').value);
+    if (!kwh) return alert('Ingresá tu consumo');
+    const kwp = (kwh * 12 / 1500).toFixed(1);           // 1 kWp ≈ 1500 kWh/año en AMBA
+    const ahorro = (kwh * 12 * 32).toLocaleString('es-AR'); // $ 32/kWh
+    document.getElementById('result').innerHTML =
+      `<strong>Resultado:</strong><br>
+       Necesitás ≈ ${kwp} kWp de potencia.<br>
+       Ahorro anual estimado: $ ${ahorro}.<br>
+       Pay-back ≈ 6-7 años.`;
+    document.getElementById('result').classList.remove('d-none');
+  }
+</script>
+
+<!-- ===== CONTACTO ===== -->
 <section id="contacto" class="text-white py-5" style="background-color: #28a745;">
   <div class="container">
     <h2 class="text-center mb-4">Contacto – Argentina</h2>
@@ -104,5 +183,11 @@
   © 2025 Vera Solar – Argentina | Resolución 1/2019 CABA – Ley 27.191
 </footer>
 
+<!-- ===== BOTÓN FLOTANTE WHATSAPP ARGENTINA ===== -->
+<a href="https://wa.me/5493835693018?text=Hola,%20quiero%20un%20estudio%20solar%20gratis." class="btn btn-success btn-lg wapp" target="_blank" rel="noopener">
+  💬 WhatsApp
+</a>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>
